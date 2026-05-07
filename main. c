@@ -1,48 +1,40 @@
 #include <stdio.h>
 
 int main() {
+    // Dados Cidade 1: Joinville
+    char estado1[] = "SC";
+    char codigo1[] = "A01";
+    char cidade1[] = "Joinville";
+    int populacao1 = 616323;
+    float area1 = 1127.95;
+    float pib1 = 36.39;
 
-    char estado1, estado2;
-    char codigo1[10], codigo2[10];
-    char nome1[50], nome2[50];
-    int populacao1, populacao2;
-    float area1, area2;
-    float pib1, pib2;
-    int pontos1, pontos2;
+    // Dados Cidade 2: Curitiba
+    char estado2[] = "PR";
+    char codigo2[] = "B01";
+    char cidade2[] = "Curitiba";
+    int populacao2 = 1773733;
+    float area2 = 435.03;
+    float pib2 = 98.00;
 
-    printf("=== CARTA 1 ===\n");
-    scanf(" %c", &estado1);
-    scanf("%s", codigo1);
-    scanf("%s", nome1);
-    scanf("%d", &populacao1);
-    scanf("%f", &area1);
-    scanf("%f", &pib1);
-    scanf("%d", &pontos1);
+    // Exibição Cidade 1
+    printf("--- Cidade 1 ---\n");
+    printf("Estado: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Cidade: %s\n", cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões\n\n", pib1);
 
-    printf("=== CARTA 2 ===\n");
-    scanf(" %c", &estado2);
-    scanf("%s", codigo2);
-    scanf("%s", nome2);
-    scanf("%d", &populacao2);
-    scanf("%f", &area2);
-    scanf("%f", &pib2);
-    scanf("%d", &pontos2);
-
-    printf("\n=== RESULTADO ===\n");
-    printf("Cidade 1: %s - %d habitantes\n", nome1, populacao1);
-    printf("Cidade 2: %s - %d habitantes\n", nome2, populacao2);
-
-return 0;
-}
-
-
-
-
-
-
-
-
-
+    // Exibição Cidade 2
+    printf("--- Cidade 2 ---\n");
+    printf("Estado: %s\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Cidade: %s\n", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões\n", pib2);
 
     return 0;
 }
+
